@@ -1,0 +1,106 @@
+Page background and font
+body {
+    background: linear-gradient(to right, #f8e1f4, #e1f7f9);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container-lg {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease-in-out;
+    animation: fadeSlide 0.8s ease;
+}
+
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+.container-lg:hover {
+    transform: scale(1.02);
+}
+
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Background gradient */
+body {
+    background: linear-gradient(135deg, #f3e7ff, #e3fdfd);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.custom-card {
+    border-radius: 20px;
+    background: #ffffff;
+    animation: fadeIn 0.7s ease;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 500px;
+}
+
+.custom-card:hover {
+    transform: scale(1.02);
+}
+
+/* Success checkmark animation */
+.checkmark-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #d4edda;
+    position: relative;
+    animation: popIn 0.6s ease-out;
+}
+
+.checkmark {
+    font-size: 40px;
+    color: #28a745;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Pop in for checkmark */
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive padding */
+.card {
+    padding: 2rem;
+}

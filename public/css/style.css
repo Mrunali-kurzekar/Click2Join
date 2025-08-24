@@ -1,0 +1,133 @@
+body {
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    scroll-behavior: auto;
+    /* width: 100%; */
+}  
+
+/* Center the form vertically */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form container styling */
+form {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Form hover effect */
+form:hover {
+    transform: scale(1.02);
+}
+
+/* Form headings */
+h1 {
+    font-weight: 600 !important;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Input and textarea fields */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 8px rgba(111, 66, 193, 0.3);
+    background-color: #fff;
+    outline: none;
+}
+
+/* Label styling */
+label {
+    font-weight: 500;
+    margin-bottom: 5px; 
+}
+
+/* Button styling */
+.btn {  
+    background-color: #9461fb !important;
+    border: none !important;
+    /* padding: 12px; */
+    font-weight: bold;
+    color:white !important;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+.btn:hover {
+    background-color: #5a379f !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(90, 55, 159, 0.3);
+}
+
+/* Add a little bounce on load */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+form {
+    animation: bounceIn 0.6s ease;
+}
+
+nav{
+    box-shadow: 0 5px 15px rgba(43, 42, 44, 0.3);
+}
+.navbar-collapse a:hover{
+text-decoration: underline;
+}
+.github-login{
+/* border:1px solid black; */
+height: 45px;
+border-radius: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 40px;
+gap: 8px;
+background-color: #a681f2;
+}
+.github-login:hover{
+box-shadow: 2px 2px 2px 2px #a681f2;
+}
+.github-login a{
+text-decoration: none;
+color:white;
+font-weight: 700;
+}
+i{
+font-size: 1.3rem;
+color:white
+}
